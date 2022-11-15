@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home_h1 {
+    text-align: center;
+    color: black;
+    font-size: 260%;
+    font-family: 'Righteous', cursive;
+    margin: 1%;
+}
+#tips_h1 {
+
+}
