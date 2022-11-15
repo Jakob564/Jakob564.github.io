@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="PokeApi-Dropdown.js" defer></script>
+    <script src="PokeApi-UserInput.js" defer></script>
     <title>PokeApi</title>
     <style>
         button:hover {
@@ -49,35 +49,15 @@
             margin-left: 2%;
             padding: 0.2%;
         }
-        #submitPokemon {
-            padding: 0.4%;
-            border-radius: 13px;
-            display: inline-block;
-            border: 2px black solid;
-            cursor: pointer;
-            margin-left: 0.5%;
-        }
-        label {
-            margin-left: 2%;
-            font-size: 120%;
-        }
     </style>
 </head>
 <body>
 
     <h1>Request data from PokeApi using AJAX</h1>
     
-    <label for="pokemon">Pick your pokemon: </label>
+    <input id="input_name" type="text" placeholder="Pokemon name">
+    <button id="submitButton" onclick="loadPokemon()">Submit</button>
 
-    <select name="pokemon" id="pokemon">
-      <option value="1">Bulbasaur</option>
-      <option value="2">Ivysaur</option>
-      <option value="3">Venusaur</option>
-      <option value="4">Charmander</option>
-      <option value="5">Charmeleon</option>
-    </select>
-
-    <div id="submitPokemon" onclick="loadPokemon()">Load this Pokemons stats!</div>
     <div id="erg"></div>
 
 </body>
