@@ -1,16 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 #home_h1 {
-    text-align: center;
     color: black;
     font-size: 260%;
     font-family: 'Righteous', cursive;
+    margin-left: 12%;
+}
+
+#imgSpalten img {
+    width: 100%;
+}
+#imgSpalten {
+    display: flex;
+}
+#spalte1 {
+    width: 31%;
     margin: 1%;
 }
-#tips_h1 {
-
+#spalte2 {
+    width: 31%;
+    margin: 1%;
+}
+#spalte3 {
+    width: 31%;
+    margin: 1%;
+}
+#header_row a {
+    text-decoration: none;
+    color: black;
+    font-size: 180%;
+    font-family: 'Secular One', sans-serif;
+}
+#header_row {
+    display: flex;
+    background-color: lightslategray;
+    padding: 1%;
+    font-weight: bolder;
+}
+#tips_spalte {
+    width: 10%;
+    text-align: center;
+    align-items: center;
+}
+#Tutorials_spalte {
+    width: 10%;
+    text-align: center;
+    align-items: center;
+}
+#h1_spalte {
+    width: 70%;
+    align-items: center;
+}
+#home_spalte {
+    width: 10%;
+    text-align: center;
+    align-items: center;
+}
+#container_tips {
+    margin: 1%;
+    font-family: 'Hind', sans-serif;
+    width: 75%;
+}
+#container_tutorial {
+    margin: 1%;
+    font-family: 'Hind', sans-serif;
+    width: 98%;
+}
+#container_tutorial h1 {
+    text-align: center;
+    font-size: 250%;
+    text-decoration: underline;
+}
+#erg_div {
+    font-size: 150%;
+    cursor: pointer;
+}
+#erg {
+    font-size: 150%;
+    cursor: pointer;
 }
