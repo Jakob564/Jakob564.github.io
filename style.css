@@ -37,6 +37,9 @@
     font-size: 180%;
     font-family: 'Secular One', sans-serif;
 }
+#header_row a:hover {
+    text-decoration: underline;
+}
 #header_row {
     display: flex;
     background-color: lightslategray;
@@ -84,4 +87,49 @@
 #erg {
     font-size: 150%;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    #tips_spalte {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        border-bottom: black solid 2px;
+        border-left: black solid 2px;
+        border-right: black solid 2px;
+    }
+    #Tutorials_spalte {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        border-bottom: black solid 2px;
+        border-left: black solid 2px;
+        border-right: black solid 2px;
+    }
+    #home_spalte {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        border: black solid 2px;
+    }
+    #home_h1 {
+        color: black;
+        font-size: 260%;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        align-items: center;
+    }
+    #h1_spalte {
+        width: 100%;
+        border-bottom: black solid 2px;
+        border-left: black solid 2px;
+        border-right: black solid 2px;
+    }
+    #header_row {
+        display: flex;
+        background-color: lightslategray;
+        padding: 1%;
+        font-weight: bolder;
+        flex-direction: column;
+    }
 }
