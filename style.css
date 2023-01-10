@@ -176,4 +176,8 @@
     #spalte3 {
         width: 100%;
     }
+    #container_tutorial h1 {
+        font-size: 150%;
+        margin-left: -0.5%;
+    }
 }
