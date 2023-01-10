@@ -138,7 +138,7 @@
     }
     #home_h1 {
         color: black;
-        font-size: 260%;
+        font-size: 200%;
         font-family: 'Righteous', cursive;
         text-align: center;
         align-items: center;
@@ -163,5 +163,17 @@
     #h1_link {
         display: flex;
         flex-direction: column;
+    }
+    #imgSpalten {
+        flex-direction: column;
+    }
+    #spalte1 {
+        width: 100%;
+    }
+    #spalte2 {
+        width: 100%;
+    }
+    #spalte3 {
+        width: 100%;
     }
 }
