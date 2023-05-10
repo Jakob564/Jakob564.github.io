@@ -21,16 +21,24 @@
     --history-main-background-color: white;
     --history-menu-background-color: #96C1F2;
     --history-div-background-color: #D9D9D9;
+    --history-menu-font-color: black;
 
     --general-menu-font-color: white;
     --general-menu-background-color: #1E88E5;
 }
 .darkmode{
-    --index-menu-background-color: #001933;
+    --index-menu-background-color: #002945;
     --index-main-background-color: #151b25;
     --index-font-color: white;
 
-    --findRoute-menu-background-color: black;
+    --findRoute-menu-background-color: black; /*#031911*/
+    --findRoute-menu-font-color: white;
+    --findRoute-side-select-color: #1f1f1f;
+
+    --history-menu-background-color: #001f54;
+    --history-menu-font-color: white;
+    --history-main-background-color: #141414;
+    
 
     
 
@@ -62,12 +70,14 @@
 }
 #topMenu_history {
     background-color: var(--history-menu-background-color);
+    color: var(--history-menu-font-color);
     align-items: center;
     padding: 1.5% 1%;
     display: flex;
 }
 #topMenu_findRoute {
     background-color: var(--findRoute-menu-background-color);
+    color: var(--findRoute-menu-font-color);
     align-items: center;
     padding: 1.5% 1%;
     display: flex;
@@ -269,7 +279,7 @@ input[type="checkbox"]:checked ~ .check::after {
     flex-direction: column;
     margin: 3.5% 3%;
 }
-#history_body {
+#body_history {
     background-color: var(--history-main-background-color);
 }
 .RouteDiv {
