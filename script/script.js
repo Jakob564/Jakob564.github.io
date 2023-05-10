@@ -37,8 +37,6 @@ function initMap() {
   })
 
 
-
-
   const drawingManager = new google.maps.drawing.DrawingManager;
 
   drawingManager.setMap(map);
@@ -46,7 +44,7 @@ function initMap() {
 
 window.initMap = initMap;
 
-Autocomplete
+//Autocomplete
 
 let autocomplete;
 initAutocomplete();
