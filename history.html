@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
+    <title>Your History</title>
+</head>
+<body id="body_history">
+    <div id="topMenu_history">
+        <div id="darkmodeButton" onclick="toggleDarkmode()">
+            <label>
+                <input class="darkmodeCheckbox" type="checkbox">
+                <span class="check"></span>
+            </label>
+        </div>
+        <h1 id="Menu_Text">Your Route History</h1>
+        <div id="generalMenu">
+            <a href="index.html" class="gMenuLink" onclick="keepUpDarkmode()">Home</a>
+            <a href="findRoute.html" class="gMenuLink" onclick="keepUpDarkmode()">Plan Route</a>
+            <a href="history.html" class="gMenuLink" onclick="keepUpDarkmode()">History</a>
+        </div>
+    </div>
+    <div id="mainHistory">
+        <div class="RouteDiv">
+            <p class="startRouteP">Plan a route to see it in your history!</p>
+            <!-- <div class="removeButton">
+                <img class="minusImg" src="img/minus.png" alt="minus">
+            </div> -->
+        </div>
+    </div>
+
+</body>
+</html>

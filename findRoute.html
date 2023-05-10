@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaQAqLjhXTWCUxUOXMOKtR7r5R1ZMngcc&callback=initMap&libraries=drawing&v=weekly" defer></script>   
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaQAqLjhXTWCUxUOXMOKtR7r5R1ZMngcc&libraries=places&callback=initMap"></script><title>Route Planner</title>
+</head>
+<body id="body_findRoute">
+    <div id="topMenu_findRoute">
+        <div id="darkmodeButton" onclick="toggleDarkmode()">
+            <label>
+                <input class="darkmodeCheckbox" type="checkbox">
+                <span class="check"></span>
+            </label>
+        </div>
+        <h1 id="Menu_Text">Find the perfect route for You!</h1>
+        <div id="generalMenu">
+            <a href="index.html" class="gMenuLink" onclick="keepUpDarkmode()">Home</a>
+            <a href="findRoute.html" class="gMenuLink" onclick="keepUpDarkmode()">Plan Route</a>
+            <a href="history.html" class="gMenuLink" onclick="keepUpDarkmode()">History</a>
+        </div>
+    </div>
+    <div id="main_content_Route">
+        <div id="sideSelect">
+            <input type="text" id="destination" placeholder="Where would you like to go?">
+            <div id="whiteBox"></div>
+            <div id="backgroundBoxInputs">
+                <input type="text" id="startingPoint" placeholder="Where do you want to start?">
+                <input type="text" id="stopBy" placeholder="Select stop by">
+                <form>
+                    <label for="hinweg"></label>
+                    <select id="hinweg_select" name="hinweg">
+                      <option value="Hinweg" id="option">Only way there</option>
+                      <option value="Rückweg" id="option">Way there and Way back</option>
+                    </select>
+                  </form>
+            </div>
+        </div>
+        <div id="map">
+            
+        </div>
+    </div>
+
+    
+</body>
+</html>

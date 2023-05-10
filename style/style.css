@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+/* Coolors pallet for Darkmode:  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --index-menu-background-color: #E3F2FD;
+    --index-main-background-color: white;
+    --index-font-color: black;
+
+    --findRoute-menu-background-color: #96F2B0;
+    --findRoute-menu-font-color: black;
+    --findRoute-side-select-color: #D9D9D9;
+    --findRoute-side-selet-input-font-color: rgb(136, 135, 135);
+    --findRoute-side-selet-input-placeholder-color: rgb(200, 200, 200);
+
+    --history-main-background-color: white;
+    --history-menu-background-color: #96C1F2;
+    --history-div-background-color: #D9D9D9;
+
+    --general-menu-font-color: white;
+    --general-menu-background-color: #1E88E5;
+}
+.darkmode{
+    --index-menu-background-color: #001933;
+    --index-main-background-color: #151b25;
+    --index-font-color: white;
+
+    --findRoute-menu-background-color: black;
+
+    
+
+}
+
+/******General Stuff******/
+#generalMenu {
+    display: flex;
+    width: 40%;
+}
+.gMenuLink {
+    background-color: var(--general-menu-background-color);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1% 0.3%;
+    border-radius: 150px;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    margin: 2%;
+    color: var(--general-menu-font-color);
+    text-decoration: none;
+}
+#topMenu_index {
+    background-color: var(--index-menu-background-color);
+    align-items: center;
+    padding: 1.5% 1%;
+    display: flex;
+}
+#topMenu_history {
+    background-color: var(--history-menu-background-color);
+    align-items: center;
+    padding: 1.5% 1%;
+    display: flex;
+}
+#topMenu_findRoute {
+    background-color: var(--findRoute-menu-background-color);
+    align-items: center;
+    padding: 1.5% 1%;
+    display: flex;
+}
+#Menu_Text {
+    width: 30%;
+    margin-right: 10%;
+    font-size: 200%;
+    font-weight: bolder;
+}
+
+/* Darkmode Button */
+#darkmodeButton {
+    margin-left: 4%;
+    width: 15%;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+.check {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    background-color: #092c3e;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+input[type="checkbox"]:checked ~ .check {
+    background-color: #fff;
+}
+.check::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ .check::before {
+    transform: translateX(-50px);
+}
+.check::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: #092c3e;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+input[type="checkbox"]:checked ~ .check::after {
+    transform: translateX(0px);
+}
+
+
+
+/******Home - Page******/
+#sideMenu {
+    display: flex;
+    width: 13%;
+    height: 100%;
+    flex-direction: column;
+    margin: 3% 2%;
+}
+.sideMenuLinkBox {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 12.5%;
+    margin: 5% 1%;
+    padding: 1%;
+    text-decoration: none;
+    color: var(--index-font-color);
+}
+.icon_div {
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    border-radius: 200px;
+    margin-right: 5%;
+}
+.iconLink {
+    width: 65%;
+    text-align: left;
+}
+#midImg img {
+    width: 90%;
+    margin: 2%;
+}
+#midImg {
+    width: 82%;
+    margin-top: 1.5%;
+}
+#main {
+    display: flex;
+}
+#body_index {
+    background-color: var(--index-main-background-color);
+    color: var(--index-font-color)
+}
+
+
+/******Find - Route - Page******/
+#main_content_Route {
+    display: flex;
+}
+#map {
+    width: 80%;
+}
+#sideSelect {
+    display: flex;
+    flex-direction: column;
+    height: 86.9vh;
+    width: 20%;
+    background-color: var(--findRoute-side-select-color);
+}
+#destination {
+    color: var(--findRoute-side-selet-input-font-color);
+    width: 90%;
+    font-weight: bold;
+    font-size: 110%;
+    padding: 4%;
+    border-radius: 15px;
+    height: 6%;
+    margin-left: 4.5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border: 0;
+}
+#sideSelect input::placeholder {
+    color: var(--findRoute-side-selet-input-placeholder-color);
+    text-align: center;
+}
+#whiteBox {
+    background-color: white;
+    width: 100%;
+    height: 6vh; 
+    margin-bottom: 10%;
+}
+#backgroundBoxInputs {
+    background-color: white;    
+    height: 30vh;
+}
+#backgroundBoxInputs input {
+    color: var(--findRoute-side-selet-input-font-color);
+    width: 93%;
+    font-weight: bold;
+    font-size: 110%;
+    padding: 4%;
+    border-radius: 15px;
+    height: 22%;
+    margin-left: 3%;
+    margin-top: 4%;
+    margin-bottom: 1%;      
+    border: 1px black solid;                                                                                                                                                                                                                                                                                                                                                                            
+}
+#hinweg_select {
+    text-align: center;
+    width: 93%;
+    font-weight: bold;
+    font-size: 110%;
+    padding: 4.5%;
+    border-radius: 15px;
+    height: 22%;
+    margin-left: 3%;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    border: 1px black solid;
+    color: var(--findRoute-side-selet-input-placeholder-color);
+    cursor: pointer;
+}
+#hinweg_select:hover {
+    cursor: pointer;
+}
+#option {
+    border-radius: 15px;
+}
+
+
+
+/******History - Page*****/
+#mainHistory {
+    display: flex;
+    flex-direction: column;
+    margin: 3.5% 3%;
+}
+#history_body {
+    background-color: var(--history-main-background-color);
+}
+.RouteDiv {
+    background-color: var(--history-div-background-color);
+    border-radius: 18px;
+    padding: 2%;
+    width: 94%;
+    display: flex;
+    align-items: center;
+} 
+.startRouteP {
+    width: 50%;
+    font-size: 160%;
+}
+
+.removeButton {
+    text-align: right;
+    width: 48%;
+}
+.minusImg {
+    width: 8%;
+}
+
