@@ -44,7 +44,7 @@ function initMap() {
 
 window.initMap = initMap;
 
-//Autocomplete
+//Autocomplete  
 
 let autocomplete;
 initAutocomplete();
