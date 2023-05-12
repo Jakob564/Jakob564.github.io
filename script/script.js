@@ -46,11 +46,10 @@ window.initMap = initMap;
 
 //Autocomplete
 
-let autocomplete;
 initAutocomplete();
 
 function initAutocomplete() {
-  autocomplete = new google.maps.places.Autocomplete(
+  let autocomplete = new google.maps.places.Autocomplete(
     document.getElementById("destination"),
     {
       types: ['establishment'],
