@@ -23,7 +23,6 @@ function keepUpDarkmode() {
 
 
 /*Map Features*/
-initMap();
 
 function initMap() {
   const startPosition = {lat: -25.344, lng: 131.03}
@@ -47,7 +46,6 @@ window.initMap = initMap;
 //Autocomplete  
 
 let autocomplete;
-initAutocomplete();
 
 function initAutocomplete() {
   autocomplete = new google.maps.places.Autocomplete(
