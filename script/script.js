@@ -54,6 +54,17 @@ function initAutocomplete() {
       types: ['establishment'],
       componentRestrictions: {'country': ['AU']},
       fields: ['place_id', 'geometry', 'name']
-    }
+    } 
   );
+  autocomplete.addListener('place_changed', onPlaceChanged);
+}
+
+function onPlaceChanged() {
+  var place = autocomplete.getPlace();
+
+  if(!place.geometry) {
+    document.getElementById('autocomplete').placeholder = "Enter a place";
+  } else {
+    document.getElementById('details').innerHTML = place.name;
+  }
 }
